@@ -1,0 +1,32 @@
+{
+  "name": "TTL Prototype",
+  "version": "0.1",
+  "description": "Today Tomorrow Later Todos",
+  "permissions": ["activeTab", "declarativeContent", "storage", "contextMenus", "alarms"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "options_page": "options.html",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "TTL",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["https://darkshade.homeip.net/*"]
+  }],
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "manifest_version": 2
+}

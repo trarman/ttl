@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+	width:170px;
+      }
+      button {
+        height: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+        outline: none;
+      }
+      #notification {
+	color: red;
+      }
+      #taskCreatorContainer {
+	padding-bottom: 5px;
+      }
+      #taskField {
+	width:148px;
+      }
+    </style>
+  </head>
+  <body>
+    TTL
+    <div id="taskCreatorContainer">
+      <input type="text" id="taskField" placeholder="New Task"></input>
+      <button id="todayButton">Today</button>
+      <button id="tomorrowButton">Tomorrow</button>
+      <button id="laterButton">Later</button>
+      <div id="notification"></div>
+    </div>
+    <button id="listButton">See List</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
