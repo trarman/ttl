@@ -1,8 +1,8 @@
 {
-  "name": "TTL Prototype",
+  "name": "TTL - Today, Tomorrow, Later",
   "version": "0.1",
   "description": "Today Tomorrow Later Todos",
-  "permissions": ["activeTab", "declarativeContent", "storage", "contextMenus", "alarms"],
+  "permissions": ["activeTab", "storage", "contextMenus", "alarms"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -18,10 +18,6 @@
       "128": "images/get_started128.png"
     }
   },
-  "content_scripts": [{
-    "js": ["content.js"],
-    "matches": ["https://darkshade.homeip.net/*"]
-  }],
   "icons": {
     "16": "images/get_started16.png",
     "32": "images/get_started32.png",
